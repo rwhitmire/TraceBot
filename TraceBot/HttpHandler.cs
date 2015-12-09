@@ -19,7 +19,7 @@ namespace TraceBot
 
             if (n == "websocket")
             {
-                context.AcceptWebSocketRequest(ProcessWSChat);
+                context.AcceptWebSocketRequest(HandleSocketRequest);
                 return;
             }
 
@@ -38,7 +38,7 @@ namespace TraceBot
 
         public bool IsReusable { get { return false; } }
 
-        private async Task ProcessWSChat(AspNetWebSocketContext context)
+        private async Task HandleSocketRequest(AspNetWebSocketContext context)
         {
             sockets.Add(context.WebSocket);
 
