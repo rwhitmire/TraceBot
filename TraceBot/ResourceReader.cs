@@ -2,9 +2,9 @@
 
 namespace TraceBot
 {
-    internal class ResourceReader
+    public class ResourceReader
     {
-        internal string Read(string filename)
+        public string Read(string filename)
         {
             var assembly = GetType().Assembly;
             var resourceName = $"TraceBot.Client.{filename}";

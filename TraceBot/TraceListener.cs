@@ -2,7 +2,7 @@
 
 namespace TraceBot
 {
-    internal class TraceListener : System.Diagnostics.TraceListener
+    public class TraceListener : System.Diagnostics.TraceListener
     {
         static BlockEmitter<string> emitter = new BlockEmitter<string>();
 
