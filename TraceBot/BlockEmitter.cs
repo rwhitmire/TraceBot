@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace TraceBot
 {
-    internal class BlockEmitter<T>
+    public class BlockEmitter<T>
     {
         Queue<Func<T>> queue = new Queue<Func<T>>();
         ManualResetEvent hasNewItems = new ManualResetEvent(false);
@@ -22,7 +22,7 @@ namespace TraceBot
             hasNewItems.Set();
         }
 
-        internal Task<T> OnAsync()
+        public Task<T> OnAsync()
         {
             return Task.Run(() =>
             {

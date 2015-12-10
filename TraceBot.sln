@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceBot", "TraceBot\TraceBot.csproj", "{3B9A4D45-25A1-47D0-8C90-8EB409358930}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0E8B342A-6EA5-4D77-8C1B-E66AC34CBC66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceBot.Test", "TraceBot.Test\TraceBot.Test.csproj", "{9F7FEDEF-5D9F-434A-B981-90D4505E6C65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,15 @@ Global
 		{3B9A4D45-25A1-47D0-8C90-8EB409358930}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B9A4D45-25A1-47D0-8C90-8EB409358930}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B9A4D45-25A1-47D0-8C90-8EB409358930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F7FEDEF-5D9F-434A-B981-90D4505E6C65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7FEDEF-5D9F-434A-B981-90D4505E6C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7FEDEF-5D9F-434A-B981-90D4505E6C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7FEDEF-5D9F-434A-B981-90D4505E6C65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F7FEDEF-5D9F-434A-B981-90D4505E6C65} = {0E8B342A-6EA5-4D77-8C1B-E66AC34CBC66}
 	EndGlobalSection
 EndGlobal
